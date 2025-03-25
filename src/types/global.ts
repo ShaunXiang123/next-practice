@@ -1,0 +1,1 @@
+export type SortValue = 'latest' | 'low' | 'higt'
