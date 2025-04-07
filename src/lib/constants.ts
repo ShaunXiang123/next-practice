@@ -26,7 +26,7 @@ export const NavList = [
 
 export const SortTitle = 'Sort by'
 export const SortList = [
-  { valeu:'latest', text:'Latest Arruvals' },
-  { valeu:'low', text:'Price: Low &gt; Higt' },
-  { valeu:'higt', text:'Price: Higt &gt; Low' },
+  { value:'latest', text:'Latest Arruvals' },
+  { value:'low', text:'Price: Low > Higt' },
+  { value:'higt', text:'Price: Higt > Low' },
 ]

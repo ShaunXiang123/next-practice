@@ -10,17 +10,19 @@ export default function Footer() {
         <h2 className="text-2xl"><Link href={Title.href}>{Title.text}</Link></h2>
         <div className="flex gap-20">
           {
-            NavList.map((item,i) => (<Fragment key={i}>
-               { i !== 0 && <Separator orientation="vertical" /> }
-              <div>
-                <span className="text-xl"><Link href={item.href}>{item.text}</Link></span>
-                <ul className="my-4 space-y-4 ">
-                  {
-                    item.list.map((item,i) => <li key={i}><Link href={item.href}>{item.text}</Link></li>)
-                  }
-                </ul>
-              </div>
-            </Fragment>))
+            NavList.map((item,i) => (
+              <Fragment key={i}>
+                { i !== 0 && <Separator orientation="vertical" /> }
+                <div>
+                  <span className="text-xl"><Link href={item.href}>{item.text}</Link></span>
+                  <ul className="my-4 space-y-4 ">
+                    {
+                      item.list.map((item,i) => <li key={i}><Link href={item.href}>{item.text}</Link></li>)
+                    }
+                  </ul>
+                </div>
+              </Fragment>
+            ))
           }
         </div>
       </div>
